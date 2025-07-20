@@ -12,8 +12,8 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// For custom domain, no basename needed
-const basename = '';
+// GitHub Pages subdirectory basename
+const basename = import.meta.env.PROD ? '/sss' : '';
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
