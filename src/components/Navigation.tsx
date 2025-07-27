@@ -25,7 +25,7 @@ const Navigation = () => {
             <div className="w-8 h-8 hero-gradient rounded-lg flex items-center justify-center">
               <Home className="w-5 h-5 text-white" />
             </div>
-            <span>BudujDom</span>
+            <span>OPprojekt</span>
           </NavLink>
 
           {/* Desktop Navigation */}
