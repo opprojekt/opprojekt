@@ -61,7 +61,7 @@ const OFirmie = () => {
       <section className="py-20 hero-gradient">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4 animate-fade-in-up">
-            O Firmie BudujDom
+            O Firmie OPprojekt
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto animate-fade-in-up-delay">
             Od ponad 15 lat tworzymy wymarzone domy dla polskich rodzin. 
