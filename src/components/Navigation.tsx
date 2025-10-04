@@ -12,6 +12,7 @@ const Navigation = () => {
     { name: 'O firmie', path: '/o-firmie' },
     { name: 'Realizacje', path: '/realizacje' },
     { name: 'Kontakt', path: '/kontakt' },
+    { name: 'Rozpocznij projekt', path: '/rozpocznij-projekt' },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -43,8 +44,8 @@ const Navigation = () => {
                 {item.name}
               </NavLink>
             ))}
-            <Button className="hero-gradient text-white shadow-soft hover:shadow-medium transition-all duration-300">
-              Bezpłatna wycena
+            <Button asChild className="hero-gradient text-white shadow-soft hover:shadow-medium transition-all duration-300">
+              <NavLink to="/rozpocznij-projekt">Rozpocznij projekt</NavLink>
             </Button>
           </div>
 
@@ -79,8 +80,10 @@ const Navigation = () => {
                   {item.name}
                 </NavLink>
               ))}
-              <Button className="hero-gradient text-white shadow-soft mx-4 mt-2">
-                Bezpłatna wycena
+              <Button asChild className="hero-gradient text-white shadow-soft mx-4 mt-2">
+                <NavLink to="/rozpocznij-projekt" onClick={toggleMenu}>
+                  Rozpocznij projekt
+                </NavLink>
               </Button>
             </div>
           </div>

@@ -1,5 +1,14 @@
+import { NavLink } from 'react-router-dom';
 import { Mail, Phone, MapPin, Home, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
+const quickLinks = [
+  { label: 'Oferty', path: '/oferty' },
+  { label: 'O firmie', path: '/o-firmie' },
+  { label: 'Realizacje', path: '/realizacje' },
+  { label: 'Rozpocznij projekt', path: '/rozpocznij-projekt' },
+  { label: 'Kontakt', path: '/kontakt' },
+];
 
 const Footer = () => {
   return (
@@ -47,10 +56,18 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-heading font-semibold text-lg">Szybkie linki</h3>
             <ul className="space-y-2 text-sm text-background/80">
-              <li className="hover:text-background cursor-pointer transition-colors">Oferty</li>
-              <li className="hover:text-background cursor-pointer transition-colors">O firmie</li>
-              <li className="hover:text-background cursor-pointer transition-colors">Realizacje</li>
-              <li className="hover:text-background cursor-pointer transition-colors">Kontakt</li>
+              {quickLinks.map((link) => (
+                <li key={link.path}>
+                  <NavLink
+                    to={link.path}
+                    className={({ isActive }) =>
+                      `transition-colors hover:text-background ${isActive ? 'text-background' : 'text-background/80'}`
+                    }
+                  >
+                    {link.label}
+                  </NavLink>
+                </li>
+              ))}
               <li className="hover:text-background cursor-pointer transition-colors">Polityka prywatności</li>
             </ul>
           </div>
