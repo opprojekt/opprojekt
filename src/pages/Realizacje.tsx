@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, MapPin, Square, Star, ArrowRight, Filter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -268,9 +269,11 @@ const Realizacje = () => {
               Dołącz do grona zadowolonych klientów i rozpocznij budowę swojego wymarzonego domu
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="hero-gradient text-white shadow-medium">
-                Rozpocznij projekt
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="hero-gradient text-white shadow-medium">
+                <Link to="/rozpocznij-projekt" className="inline-flex items-center justify-center gap-2">
+                  Rozpocznij projekt
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
               <Button variant="outline" size="lg">
                 Umów spotkanie

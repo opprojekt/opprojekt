@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle, Users, Award, Clock, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Layout from '@/components/Layout';
@@ -34,12 +35,23 @@ const Index = () => {
               Z nami stworzysz przestrzeń idealną dla Twojej rodziny.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up-delay-2">
-              <Button size="lg" className="accent-gradient text-white shadow-strong hover:shadow-medium transition-all duration-300">
-                Bezpłatna wycena
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button
+                asChild
+                size="lg"
+                className="hero-gradient text-white shadow-medium hover:shadow-strong transition-all duration-300"
+              >
+                <Link to="/rozpocznij-projekt" className="inline-flex items-center gap-2">
+                  Rozpocznij projekt
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
-              <Button variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-foreground">
-                Zobacz realizacje
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="text-white border-white hover:bg-white hover:text-foreground"
+              >
+                <Link to="/realizacje">Zobacz realizacje</Link>
               </Button>
             </div>
           </div>
