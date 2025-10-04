@@ -232,7 +232,7 @@ const Kontakt = () => {
                     <Phone className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Zadzwoń teraz</p>
-                      <p className="text-sm text-muted-foreground">+48 123 456 789</p>
+                      <p className="text-sm text-muted-foreground">+48 889781597</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
