@@ -39,7 +39,7 @@ const Kontakt = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["kontakt@OPprojekt.pl", "biuro@OPprojekt.pl"],
+      details: ["buiro.opprojekt@wp.pl"],
       description: "Napisz do nas, odpowiemy w 24h"
     },
     {
@@ -242,7 +242,7 @@ const Kontakt = () => {
                     <Mail className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Napisz email</p>
-                      <p className="text-sm text-muted-foreground">kontakt@OPprojekt.pl</p>
+                      <p className="text-sm text-muted-foreground">buiro.opprojekt@wp.pl</p>
                     </div>
                   </div>
                   <Button variant="outline" className="w-full" size="lg">
