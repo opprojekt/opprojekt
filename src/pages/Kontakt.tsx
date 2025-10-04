@@ -33,7 +33,7 @@ const Kontakt = () => {
     {
       icon: Phone,
       title: "Telefon",
-      details: ["+48 889 781 597", "+48 987 654 321"],
+      details: ["+48 660 930 713", "+48 889 781 597"],
       description: "Zadzwoń do nas w godzinach pracy"
     },
     {
