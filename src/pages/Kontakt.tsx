@@ -45,7 +45,7 @@ const Kontakt = () => {
     {
       icon: MapPin,
       title: "Adres",
-      details: ["ul. Budowlana 123", "03-578 Warszawa"],
+      details: ["ul. Bieżuńska 1", "03-578 Warszawa"],
       description: "Odwiedź nasze biuro"
     },
     {
@@ -215,7 +215,7 @@ const Kontakt = () => {
                   <div className="relative w-full overflow-hidden rounded-lg">
                     <iframe
                       title="Mapa lokalizacji OP Projekt"
-                      src="https://www.google.com/maps?q=ul.+Budowlana+123,+Warszawa&output=embed"
+                      src="https://www.google.com/maps?q=ul.+Bie%C5%BCu%C5%84ska+1,+Warszawa&output=embed"
                       loading="lazy"
                       allowFullScreen
                       referrerPolicy="no-referrer-when-downgrade"
