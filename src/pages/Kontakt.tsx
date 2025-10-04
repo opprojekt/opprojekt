@@ -45,7 +45,7 @@ const Kontakt = () => {
     {
       icon: MapPin,
       title: "Adres",
-      details: ["ul. Budowlana 123", "00-001 Warszawa"],
+      details: ["ul. Bieżuńska 1/48", "03-578 Warszawa"],
       description: "Odwiedź nasze biuro"
     },
     {
