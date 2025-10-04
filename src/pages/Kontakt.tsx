@@ -45,7 +45,7 @@ const Kontakt = () => {
     {
       icon: MapPin,
       title: "Adres",
-      details: ["ul. Bieżuńska 1/48", "03-578 Warszawa"],
+      details: ["ul. Budowlana 123", "03-578 Warszawa"],
       description: "Odwiedź nasze biuro"
     },
     {
@@ -212,12 +212,15 @@ const Kontakt = () => {
               {/* Map Placeholder */}
               <Card className="glass-card border-0 shadow-soft">
                 <CardContent className="p-0">
-                  <div className="h-64 bg-muted rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <MapPin className="w-12 h-12 text-muted-foreground mx-auto mb-2" />
-                      <p className="text-muted-foreground">Mapa lokalizacji</p>
-                      <p className="text-sm text-muted-foreground">ul. Budowlana 123, Warszawa</p>
-                    </div>
+                  <div className="relative w-full overflow-hidden rounded-lg">
+                    <iframe
+                      title="Mapa lokalizacji OP Projekt"
+                      src="https://www.google.com/maps?q=ul.+Budowlana+123,+Warszawa&output=embed"
+                      loading="lazy"
+                      allowFullScreen
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="w-full h-64 sm:h-72 md:h-80 border-0"
+                    />
                   </div>
                 </CardContent>
               </Card>
