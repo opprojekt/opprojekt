@@ -170,7 +170,7 @@ const Index = () => {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-primary">
-              Zadzwoń: +48 123 456 789
+              Zadzwoń: +48 889 781 597
             </Button>
           </div>
         </div>
